@@ -170,6 +170,7 @@ body {
     display: block;
   }
   .container {
+    margin-left: 20px;
     width: 70vw;
   }
   .container .header-nav .logo {
@@ -184,12 +185,18 @@ body {
   .container main {
     width: 100%;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 0px;
+  }
+  .container main section {
+    margin-left: 0;
   }
   .container main h1 {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 48px;
   }
   .container main p {
+    margin-top: 15px;
+    margin-bottom: 35px;
     font-size: 20px;
   }
   .container main button {
