@@ -26,17 +26,18 @@ body {
     background-repeat: no-repeat;
     background-position: 977px 135px;
     max-width: 100%;
+     overflow-x: hidden; 
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
-
+    width: 100%;
 
     header {
         width: 100%;
         height: 137px;
-        
+
 
     }
 
@@ -83,13 +84,13 @@ body {
         .menu-bar {
             width: 100%;
 
-            ul {
+            .menu-list {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 50px;
                 align-items: center;
                 justify-items: center;
-                margin-left: 100px;
+                margin-left: 125px;
             }
 
             li {
@@ -121,11 +122,12 @@ body {
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            padding-right: 10px;
+
             flex-wrap: nowrap;
+            margin-left: 85px;
 
             img {
-                margin: 25px;
+                margin: 22px;
             }
         }
 
@@ -137,59 +139,337 @@ body {
     main {
         max-width: 1200px;
         margin: auto;
-         width: 809px;
-        height: 459px; 
-         margin-left: 168px;
-        margin-top: 140px; 
 
 
-        h1 {
-            
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 590;
-            font-size: 50px;
-            line-height: 78px;
-            color: white;
+        .hero {
+            width: 809px;
+            height: 459px;
+            margin-left: 168px;
+            margin-top: 155px;
+
+            h1 {
+                max-width: 790px;
+                height: 85px;
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 52px;
+                line-height: 82px;
+                color: #FFFFFF;
+                letter-spacing: 2px;
+                word-spacing: -2px;
+                margin-top: 2px;
+                margin-left: 2px;
+            }
+
+            p {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 45px;
+                margin-top: 61px;
+                margin-bottom: 80px;
+                color: #BCBCBC;
+            }
+
+            button {
+                width: 280px;
+                height: 80px;
+                left: 115px;
+                top: 622px;
+
+                background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 83px;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 42px;
+                color: white;
+            }
+
+            button:hover {
+                opacity: 0.4;
+            }
         }
 
-        p {
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 45px;
-            margin-top: 61px;
-            margin-bottom: 80px;
-            color: #BCBCBC;
-        }
+        .projects {
+           
+            width: 100%;
+            margin: auto;
+            margin-top: 166px;
 
-        button {
-            width: 280px;
-            height: 80px;
-            left: 115px;
-            top: 622px;
+            .projects-text {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 55px;
+                line-height: 82px;
+                color: #FFFFFF;
+                margin-left: 143px;
+            }
 
-            background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 83px;
+            .projects-card1 {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                position: relative;
+                border: 3px solid #0F1624;
 
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 42px;
-            color: white;
-        }
+                box-shadow: 0px 0px 12px #FFFFFF;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                margin-top: 127px;
+                margin-left: 15px;
+                margin-right: 15px;
 
-        button:hover {
-            opacity: 0.4;
+                .projects-card1-texts {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    .projects-card1-title {
+
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 88.5%;
+                        margin-top: 80px;
+                        margin-left: -2px;
+
+                        &::after {
+                            content: '';
+                            width: 22%;
+                            height: 6px;
+                            background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 83px;
+                            position: absolute;
+                            top: 140px;
+                            left: 150px;
+                        }
+
+                    }
+
+                    .projects-card1-para {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 42px;
+                        margin-top: 150px;
+                        color: #FFFFFF;
+                        margin-left: 50px;
+                    }
+
+                    button {
+                        width: 220px;
+                        height: 70px;
+
+
+                        background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 83px;
+                        margin: auto;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 35px;
+                        color: white;
+                    }
+
+                    button:hover {
+                        opacity: 0.4;
+                    }
+                }
+
+
+
+                .projects-card1-image img {
+                    padding: 20px;
+                    border-bottom-right-radius: 60px;
+
+                }
+
+
+            }
+
+            .projects-cardsParent {
+                margin-left: 15px;
+                margin-right: 15px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-top: 150px;
+                gap: 80px;
+
+                .projects-card2 {
+                    position: relative;
+                    display: flexbox;
+                    flex-direction: column;
+                    border: 3px solid #0F1624;
+
+                    box-shadow: 0px 0px 12px #FFFFFF;
+                    border-top-left-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    .projects-card2-image img{
+                       
+                    }
+                    .projects-card2-texts {
+                        display: flex;
+                        flex-direction: column;
+
+                        .projects-card2-title {
+                            text-align: center;
+                            color: #FFFFFF;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 36px;
+                            line-height: 88.5%;
+                            margin-top: 80px;
+                            margin-left: -2px;
+
+                            &::after {
+                                content: '';
+                                width: 45%;
+                                height: 6px;
+                                background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 83px;
+                                position: absolute;
+                                top: 700px;
+                                left: 150px;
+                            }
+                        }
+
+                        .projects-card2-para {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 28px;
+                            line-height: 42px;
+                            margin-top: 150px;
+                            color: #FFFFFF;
+                            margin-left: 50px;
+                        }
+
+                        button {
+                            width: 220px;
+                            height: 70px;
+
+
+                            background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 83px;
+                            margin: auto;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 35px;
+                            color: white;
+                        }
+
+                        button:hover {
+                            opacity: 0.4;
+                        }
+                    }
+                }
+
+                .projects-card3 {
+                    border: 3px solid #0F1624;
+                    position: relative;
+                    box-shadow: 0px 0px 12px #FFFFFF;
+                    border-top-left-radius: 50px;
+                    border-bottom-right-radius: 50px;
+
+                    .projects-card3-texts {
+                        display: flex;
+                        flex-direction: column;
+
+                        .projects-card3-title {
+                            text-align: center;
+                            color: #FFFFFF;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 36px;
+                            line-height: 88.5%;
+                            margin-top: 80px;
+                            margin-left: -2px;
+
+                            &::after {
+                                content: '';
+                                width: 45%;
+                                height: 6px;
+                                background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 83px;
+                                position: absolute;
+                                top: 700px;
+                                left: 150px;
+                            }
+                        }
+
+                        .projects-card3-para {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 28px;
+                            line-height: 42px;
+                            margin-top: 150px;
+                            color: #FFFFFF;
+                            margin-left: 50px;
+                        }
+
+                        button {
+                            width: 220px;
+                            height: 70px;
+
+
+                            background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 83px;
+                            margin: auto;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 35px;
+                            color: white;
+                        }
+
+                        button:hover {
+                            opacity: 0.4;
+                        }
+                    }
+                }
+
+                .projects-card2-image img,
+                .projects-card3-image img {
+                    padding: 10px;
+                    border-top-left-radius: 50px;
+                }
+
+            }
         }
     }
 
 }
 
-@media (max-width: 1000px) {
+ @media (max-width: 1000px) {
     body {
         background-position: 307px 105px;
     }
@@ -199,6 +479,7 @@ body {
     }
 
     .container {
+        
         margin-left: 20px;
         width: 70vw;
 
@@ -206,9 +487,42 @@ body {
             padding-left: 10px;
         }
 
-        .menu-bar {
-            display: none;
+
+        .menu-bar-phone {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #0F1624;
+            width: 50%;
+            height: 100%;
+            border-right: #ccc 1px solid;
+            opacity: 0.9;
+            padding: 30px;
+            transform: translateX(-1550px);
+            transition: transform 0.5s ease-in-out;
         }
+
+        .header-nav .menu-bar .menu-list {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .menu-bar ul li {
+            padding: 10px;
+            border-bottom: #ccc solid 1px;
+            font-size: 14px;
+        }
+
+
+        .menu-bar-phone.show {
+            transform: translateX(-20px);
+        }
+
 
         .social img {
             display: none;
@@ -219,15 +533,20 @@ body {
             margin: 0;
             padding-left: 0px;
 
-        section {
-            margin-left: 0;
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr;
         }
+
+            section {
+                margin-left: 0;
+            }
 
 
             h1 {
                 font-size: 25px;
                 line-height: 48px;
-                
+
             }
 
             p {
@@ -251,4 +570,4 @@ body {
     body {
         background-position: 7px 105px;
     }
-}
+} 

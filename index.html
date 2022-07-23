@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="closeMenu()">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="menu-btn">
+    <div class="menu-btn" onclick="toggleNav(event)">
         <i class="fas fa-bars fa-2x"></i>
     </div>
     
@@ -29,8 +29,8 @@
                     <a href="index.html"><img src="assets/logo_image.svg" alt="logo">
                     <h3>Portfolio</h3></a>
                 </div>
-                <div class="menu-bar">
-                    <ul>
+                <div class="menu-bar menu-bar-phone" onclick="preventClose(event)">
+                    <ul class="menu-list">
                         <li>
                             <a href="#Projects">Projects</a>
                         </li>
@@ -49,15 +49,56 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="hero">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quasi eveniet mollitia nisi distinctio odio a ab, praesentium quibusdam.</p>
                 <button>Let's begin</button>
 
             </section>
+
+            <section class="projects">
+                <h1 class="projects-text">Projects</h1>
+                <div class="projects-card1">
+                    <div class="projects-card1-texts">
+                        <h3 class="projects-card1-title">PROJECT1</h3>
+                        <p class="projects-card1-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button>Look it up</button>
+                    </div>
+                    <div class="projects-card1-image">
+                        <img src="assets/laptops.png" alt="laptops" />
+                    </div>
+                </div>
+
+                <div class="projects-cardsParent">
+                    <div class="projects-card2">
+                        <div class="projects-card2-image">
+                            <img src="assets/laptops.png" alt="laptops" />
+                        </div>
+                        <div class="projects-card2-texts">
+                            <h3 class="projects-card2-title">PROJECT2</h3>
+                            <p class="projects-card2-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <button>Look it up</button>
+                        </div>
+                        
+                    </div>
+                    <div class="projects-card3">
+                        <div class="projects-card3-image">
+                            <img src="assets/laptops.png" alt="laptops" />
+                        </div>
+                        <div class="projects-card3-texts">
+                            <h3 class="projects-card3-title">PROJECT3</h3>
+                            <p class="projects-card3-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <button>Look it up</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </section>
         </main>
     </div>
 
+        <script src="main.js" defer></script>
 </body>
 
 </html>
